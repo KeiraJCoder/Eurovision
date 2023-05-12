@@ -1,114 +1,145 @@
 /* Global Styles */
-body.about {
+
+body {
+
   margin: 0;
+
   padding: 0;
+
   font-family: Arial, sans-serif;
+
   background-color: #f2f2f2;
+
   color: #333;
+
 }
 
 /* Navigation Bar */
+
 #navbar {
+
   display: flex;
+
   justify-content: space-evenly;
-  background-color: #333;
+
+  background-image: url(Flag-Ukraine.webp);
+
+  background-size: contain;
+
   padding: 10px;
+
 }
 
 #navbar a {
+
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+
+  font-size: 30px;
+
   text-decoration: none;
-  color: #fff;
+
+  color: greenyellow;
+
+  text-shadow: white 1px 2px;
+
+}
+
+#navbar a:hover {
+
+  color: white;
+
 }
 
 /* Banner */
+
 .banner {
+
   width: 100%;
+
   height: auto;
+
 }
 
 /* Card Grid */
+
 .grid {
+
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
   gap: 20px;
+
   padding: 20px;
+
 }
 
 .card {
+
   background-color: #fff;
+
   border-radius: 8px;
+
   padding: 20px;
+
 }
 
 .band-info {
+
   position: relative;
+
 }
 
 .band-info img {
+
   max-width: 100%;
+
   height: auto;
+
 }
 
 .country-overlay {
+
   position: absolute;
+
   top: 10px;
+
   left: 10px;
+
   background-color: rgba(0, 0, 0, 0.5);
+
   color: #fff;
+
   padding: 5px 10px;
+
   border-radius: 4px;
+
 }
 
 .country {
+
   margin: 0;
+
   font-size: 18px;
+
 }
 
 .overlay {
+
   margin-top: 20px;
+
 }
 
-/* Media Queries */
-@media (max-width: 767px) {
-  /* Styles for screens smaller than 768px */
-  #navbar {
-    flex-direction: column;
-    align-items: center;
-  }
+.band-name-hidden,
 
-  #navbar a {
-    margin-bottom: 10px;
-  }
+.song-title-hidden,
 
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
+.band-profile-hidden {
 
-  .card {
-    padding: 10px;
-  }
+  display: none;
 
-  .country-overlay {
-    font-size: 14px;
-  }
-
-  .country {
-    font-size: 14px;
-  }
-
-  .overlay {
-    margin-top: 10px;
-  }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Styles for screens between 768px and 1024px */
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-}
-
-/* Additional Media Queries for larger screens if needed */
-
+ 
+  
+    
