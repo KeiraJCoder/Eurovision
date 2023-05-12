@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+
+header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: calc(25% - 40px);
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto; /* Add this line to center the image */
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card .country-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-shadow: black 1px 2px;
+  padding: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.card:hover .country-overlay {
+  opacity: 0;
+}
+
+.card .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.535);
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  text-shadow:rgb(238, 255, 0) 1px 1px;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+  display: block;
+  opacity: 1;
+}
+
+.card .overlay h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.card .overlay p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url(Flag-Ukraine.webp);
+  background-size: contain;
+}
+
+#navbar a.gradient-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow */
+  transition: color 0.3s ease;
+}
+
+#navbar a.gradient-text:hover {
+  color: white;
+  text-shadow: black 1px 1px; /* Remove shadow on hover */
+}
+
+
+.about{
+
+  background-image: url(EBUweb.jpeg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+
+}
+
+.banner {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Add this line to center the banner */
+}
+
